@@ -1,4 +1,6 @@
 
+import 'package:cleanachtecture/core/Errors/error_model.dart';
+import 'package:cleanachtecture/core/Errors/exception.dart';
 import 'package:cleanachtecture/core/Models/basic_mdel.dart';
 import 'package:cleanachtecture/core/Models/catag_model.dart';
 import 'package:cleanachtecture/core/services/catag.dart';

@@ -1,0 +1,1 @@
+String get_Bycicle_catogary="bicycle/bicycles-categories";

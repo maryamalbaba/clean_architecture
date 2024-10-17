@@ -3,7 +3,7 @@ import 'package:dio/dio.dart';
 
 abstract class Apiconsumer {
   Future<Response> get(
-    String path, {
+    String path,  {
       bool is_need_data_to_map=false,
     Object? data,
     Map<String, dynamic>? queryParameters,
@@ -11,8 +11,25 @@ abstract class Apiconsumer {
   
   });
 
-  post();
-  patch();
-  delete();
+  post(
+     String path, {
+      bool is_need_data_to_map=false,
+    Object? data,
+    Map<String, dynamic>? queryParameters,
+    Options? options,
+     }
+  );
+  patch(   String path, {
+      bool is_need_data_to_map=false,
+    Object? data,
+    Map<String, dynamic>? queryParameters,
+    Options? options,
+     });
+  delete(   String path, {
+      bool is_need_data_to_map=false,
+    Object? data,
+    Map<String, dynamic>? queryParameters,
+    Options? options,
+     });
 
 }
